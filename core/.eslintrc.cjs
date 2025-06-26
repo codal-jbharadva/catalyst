@@ -11,6 +11,12 @@ const config = {
     '@bigcommerce/catalyst/next',
     '@bigcommerce/catalyst/prettier',
   ],
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'], 
+    ecmaVersion: 2020,
+    sourceType: 'module',
+  },
   rules: {
     '@typescript-eslint/naming-convention': 'off',
     '@next/next/no-html-link-for-pages': 'off',

@@ -13,6 +13,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@algolia/requester-fetch": "^5.0.0",
     "@bigcommerce/catalyst-client": "workspace:^",
     "@conform-to/react": "^1.6.1",
     "@conform-to/zod": "^1.6.1",
@@ -37,6 +38,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/kv": "^3.0.0",
     "@vercel/speed-insights": "^1.2.0",
+    "algoliasearch": "^5.0.0",
     "clsx": "^2.1.1",
     "content-security-policy-builder": "^2.3.0",
     "deepmerge": "^4.3.1",
