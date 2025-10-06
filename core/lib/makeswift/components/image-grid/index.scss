@@ -1,0 +1,86 @@
+.image-grid {
+  padding: 4.5rem 1.25rem; 
+  width: 100%;
+
+  @media (min-width: 640px) {
+    padding-top: 4.75rem; 
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 2.5rem; 
+    padding-right: 2.5rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    width: fit-content;
+  }
+
+  &__header-btn {
+    width: fit-content;
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: 640px) {
+        display: block;
+      }
+    }
+
+    &--mobile {
+      margin-top: 2.5rem;
+      display: block;
+      width: fit-content;
+
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+
+    @media (min-width: 640px) {
+      margin-top: 1.5rem; 
+    }
+
+    @media (min-width: 640px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__card {
+    position: relative;
+    height: 175px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 640px) {
+      height: 205px;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    z-index: 10;
+  }
+
+  &__cta {
+    position: absolute;
+    bottom: 1.25rem;
+    z-index: 20;
+  }
+}
